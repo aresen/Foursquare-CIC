@@ -1,8 +1,4 @@
 <?php
-
-//$client_id = "CHVMFY0GG5RRXUTWBR4DAVHAUBJIJPI04CA2KJJGSZKDKUFI";
-//$secret = "FDDUQFDTLTFFMYXP0QGKS2AWTB3RJ224MKFSF4BGB2LD33OT";
-//$redirect = "http://ec2-54-200-171-234.us-west-2.compute.amazonaws.com/callback.php";
 include_once('config.php');
 ?>
 
