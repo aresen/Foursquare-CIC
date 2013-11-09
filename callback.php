@@ -1,5 +1,7 @@
 <?php
-$include_once('config.php');
+$client_id = "CHVMFY0GG5RRXUTWBR4DAVHAUBJIJPI04CA2KJJGSZKDKUFI";
+$secret = "FDDUQFDTLTFFMYXP0QGKS2AWTB3RJ224MKFSF4BGB2LD33OT";
+$redirect = "http://ec2-54-200-171-234.us-west-2.compute.amazonaws.com/callback.php";
 if($_GET['code']){
 //We need to hit up the authkey URL and get the key in JSON format
 $authkey = file_get_contents("https://foursquare.com/oauth2/access_token?client_id=".$client_id."&client_secret=".$secret."&grant_type=authorization_code&redirect_uri=".$redirect."&code=".$_GET['code']);
