@@ -17,7 +17,6 @@ include_once "config.php";
     </div>
     <div id="footer">
    	 <p class="left">This application uses foursquare</p>
-   	 <p>Copyright &copy; 2013 - Huy Q. Le</p>
    	 <p class="right"></p>
     </div>
     </body>

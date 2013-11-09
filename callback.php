@@ -8,22 +8,50 @@ $decoded_auth = json_decode($authkey,true);
 $access_token = $decoded_auth['access_token'];
 //we then look up whatever endpoint of the api we want
 $userinfo = file_get_contents("https://api.foursquare.com/v2/users/self?oauth_token=".$access_token);
+//https://api.foursquare.com/v2/users/USER_ID/friends
+$newuserinfo = file_get_contents("https://api.foursquare.com/v2/users/self/friends?oauth_token=".$access_token);
 $decoded_userinfo = json_decode($userinfo, true);
+
+$newdecoded_userinfo = json_decode($newuserinfo, true);
+
 $name = $decoded_userinfo['response']['user']['firstName'];
+$lastname = $decoded_userinfo['response']['user']['lastName'];
+
+$pals = array();
+for ($x = 0; $x < $newdecoded_userinfo['response']['friends']['count']; $x++)
+{
+	$pals[$x] = $newdecoded_userinfo['response']['friends']['items'][$x]['firstName'];
+	
 }
+
+function friends($pals) 
+{
+	for ($x = 0; $x < count($pals) + 5; $x++)
+	{
+		echo array_shift($pals), " ";
+	
+	}
+}
+
+
+}
+
 ?>
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Welcome to Checkin Challenge</title>
+    <title>Welcome to Check-in Challenge</title>
     <meta http-equiv="content-type" content="text/html;charset=utf-8" />
 </head>
  
     <body>
    	 <div id="content">
    		 <h1>Hello, <?php echo $name; ?></h1>
+   		 <h2>YO LAST NAME IS WHAT? <?php echo $lastname; ?></h2>
+   		 <h3>Amumu's friends are <?php friends($pals); ?></h3>
    		 <p>Should print the name of foursquare user</p>
    	 </div>
+   	 <p><a href = "create.php"> Create a Challenge</p>
     </body>
 </html>
