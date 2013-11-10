@@ -42,17 +42,20 @@ function friends($pals)
 <head>
     <title>Welcome to Check-in Challenge</title>
     <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+     <link rel="stylesheet" type="text/css" href="static/style.css">
 </head>
     <body>
+    <section>
 	<header>
-		<h2>Check-In Challenge</h2>
+		<h1>Check-In Challenge</h1>
 	</header>
    	 <div id="content">
-   		 <h1>Hello, <?php echo $name; ?></h1>
-   		 <h2>YO LAST NAME IS WHAT? <?php echo $lastname; ?></h2>
-   		 <h3>Amumu's friends are <?php friends($pals); ?></h3>
+   		 <h2>Hello, <?php echo $name; ?></h2>
+   		 <h2>Last Name:<?php echo $lastname; ?></h2>
+   		 <h3>Your friends are <?php friends($pals); ?></h3>
    		 <p>Should print the name of foursquare user</p>
    	 </div>
    	 <p><a href = "create.php"> Create a Challenge</p>
+     </section>
     </body>
 </html>

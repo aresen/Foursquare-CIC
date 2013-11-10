@@ -9,6 +9,7 @@ session_start();
 <head>
 	<title>Create!</title>
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+     <link rel="stylesheet" type="text/css" href="static/style.css">
 	<script>
 	$( document ).ready(function(){
 	    var oauth = encodeURI('<?php echo $_SESSION['access_token']; ?>');
@@ -28,6 +29,7 @@ session_start();
 </head>
  
     <body>
+    <section>
 	<header>
 		<h1>Check-In Challenge</h1>
 	</header>
@@ -36,10 +38,11 @@ session_start();
     	<form action="submit.php" method="post">
     		Keyword: <input name="venue" type="text" value="" id="keyw">
     		Place: <input name="place" type="text" value="" id="place">
-	<input name="submit" type="button" value ="submit" id='test'>
+        <input type="submit" value ="Submit" id='test' />
     	</form>
     	<p>Add a place!</p>
 	<br>
     </div>
+    </section>
     </body>
  </html>

@@ -1,0 +1,92 @@
+* {
+    font-family:        'Open Sans', sans-serif;
+}
+html,body {
+    padding:            0;
+    background-color:   #d9d9d9;
+    height:             100%;
+}
+body {
+    margin:             0 140px 0 75px;
+}
+section {
+    padding:            0;
+    margin:             0;
+    height:             100%;
+    border:             1px black;
+    background-color:   #b3b3b3;
+}
+header {
+    padding:            0;
+    margin:             50px 40px 20px 0;
+    border:             1px black;
+    background;         transparent;
+}
+header h1 {
+    font-weight:        800;
+    font-size:          36px;
+    color:              #ccffff;
+    text-shadow:        2px 2px #0ca9c9;
+    padding:            20px 0 0 30px;
+}
+#content {
+    padding:            0 0 0 30px;
+    margin:             10px 0 0 0;
+}
+#content h2 {
+    font-size:          20px;
+    font-weight:        600;
+}
+#content h3 {
+    font-size:          16px;
+    font-weight:        400;
+}
+#content a:visited {
+    border:             none;
+}
+#content a:hover {
+    border:             1px black;
+}
+#desc {
+    padding:             0 0 0 30px;
+}
+#desc h2 {
+    font-weight:        400;
+}
+#desc p {
+    font-weight:        200;
+    padding:            0 0 0 10px;
+}
+#footer {
+    float:              left;
+    padding:            20px 0 0 30px;
+    font-size:          14px;
+    font-weight:        200;
+}
+input[type=text] {
+    padding:            2px; border:2px solid #ccc; 
+    -webkit-border-radius: 5px;
+    border-radius:      5px;
+}
+input[type=text]:focus {border-color:#333; }
+
+input#test {
+    color:              #dfe7ea;
+    width:              250px;
+    padding:            3px 15px; 
+    background:         #0cbadf; 
+    border:             0 none;
+    cursor:             pointer;
+    -webkit-border-radius: 5px;
+    border-radius:      5px; 
+    -webkit-box-shadow: inset 0px 1px 0px 3e9cbf, 0px 5px 0px 0px #205c73, 0px 10px 5px #999;
+    -moz-box-shadow: inset 0px 1px 0px 3e9cbf, 0px 5px 0px 0px #205c73, 0px 10px 5px #999;
+    box-shadow: inset 0px 1px 0px 3e9cbf, 0px 5px 0px 0px #205c73, 0px 10px 5px #999;
+}
+input#test:hover, input#test:focus {
+    color:              black;
+    -webkit-box-shadow: inset 0px 1px 0px #3e9cbf, 0px 2px 0px 0px #205c73, 0px 2px 5px #999;
+    -moz-box-shadow:    inset 0px 1px 0px #3e9cbf, 0px 2px 0px 0px #205c73, 0px 2px 5px #999;
+    box-shadow:         inset 0px 1px 0px #3e9cbf, 0px 2px 0px 0px #205c73, 0px 2px 5px #999;
+}
+
