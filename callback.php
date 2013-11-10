@@ -32,13 +32,9 @@ function friends($pals)
 	for ($x = 0; $x < count($pals) + 5; $x++)
 	{
 		echo array_shift($pals), " ";
-	
 	}
 }
-
-
 }
-
 ?>
 
 <!DOCTYPE html>
@@ -47,8 +43,10 @@ function friends($pals)
     <title>Welcome to Check-in Challenge</title>
     <meta http-equiv="content-type" content="text/html;charset=utf-8" />
 </head>
- 
     <body>
+	<header>
+		<h2>Check-In Challenge</h2>
+	</header>
    	 <div id="content">
    		 <h1>Hello, <?php echo $name; ?></h1>
    		 <h2>YO LAST NAME IS WHAT? <?php echo $lastname; ?></h2>

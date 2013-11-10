@@ -11,13 +11,16 @@ session_start();
 </head>
  
     <body>
+	<header>
+		<h1>Check-In Challenge</h1>
+	</header>
     <div id="content">
-   	 <h1>Welcome to foursquare checkin challenge</h1>
+   	 <h2>Welcome to foursquare checkin challenge</h2>
    	 <p></p>
    	 <p><a href="https://foursquare.com/oauth2/authenticate?client_id=<?php echo $client_id; ?>&response_type=code&redirect_uri=<?php echo $redirect; ?>" title="Login">Log in with Foursquare</a></p>
     </div>
     <div id="footer">
-   	 <p class="left">This application uses foursquare</p>
+   	 <p class="left">This application uses Foursquare to deliver content.</p>
    	 <p class="right"></p>
     </div>
     </body>

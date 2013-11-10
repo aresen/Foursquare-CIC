@@ -28,8 +28,11 @@ session_start();
 </head>
  
     <body>
+	<header>
+		<h1>Check-In Challenge</h1>
+	</header>
     <div id="content">
-    	<h1> Let's play a game... </h1>
+    	<h2> Let's play a game... </h2>
     	<form action="submit.php" method="post">
     		Keyword: <input name="venue" type="text" value="" id="keyw">
     		Place: <input name="place" type="text" value="" id="place">
